@@ -79,6 +79,8 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  flex-direction: column;
+  width: 100%;
 }
 
 .center::before {
@@ -227,4 +229,65 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+/* 
+
+LISTE
+
+*/
+
+.listitem {
+  display: flex;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  margin: 0.2rem;
+}
+
+.listitem p {
+  position: relative;
+}
+
+.gridsearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.gridsearch p :hover {
+  cursor: pointer;
+}
+
+.listitem button {
+  padding: 0.5rem;
+}
+
+.gridval {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gridval p {
+  flex: 1;
+}
+
+.colorgreen {
+  color: rgb(0, 255, 0);
+}
+
+.colorred {
+  color: rgb(255, 0, 0);
 }
