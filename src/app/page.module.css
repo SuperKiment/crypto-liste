@@ -280,6 +280,10 @@ LISTE
   width: 100%;
 }
 
+.gridval button {
+  padding: 0 0.5rem;
+}
+
 .gridval p {
   flex: 1;
 }
@@ -290,4 +294,30 @@ LISTE
 
 .colorred {
   color: rgb(255, 0, 0);
+}
+
+.gridtrois {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+}
+
+.connexionbutton {
+  width: 100%;
+}
+
+.connexionbutton button {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.interfaceconnexion button {
+  padding: 0.5rem;
+}
+
+.listitem button {
+  margin-right: 1rem;
+  padding: 0 .5rem;
+  width: 10rem;
 }

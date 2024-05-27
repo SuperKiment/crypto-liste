@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import CryptoList from "./components/CryptoList";
 
 export default function Home() {
+  
   return (
     <main className={styles.main}>
 

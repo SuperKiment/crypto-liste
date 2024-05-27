@@ -17,3 +17,8 @@ export interface Crypto {
   tsupply: number;
   msupply: number;
 }
+
+export interface User {
+  username: string;
+  cryptos: Crypto[];
+}
