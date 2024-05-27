@@ -5,7 +5,7 @@ import styles from "../page.module.css";
 import CryptoItem from "./CryptoItem";
 import { Crypto, User } from "../types";
 
-export default () => {
+const CryptoList = () => {
   const url = "https://api.coinlore.net/api/tickers/";
   const urlUser = "https://superkiment.fr/?page=crypto-liste";
   const [cryptos, setCryptos] = useState<Crypto[]>([]);
@@ -225,7 +225,7 @@ export default () => {
                 type="text"
                 name="username"
                 id="username"
-                placeholder="Nom d'utilisateur"
+                placeholder="Nom d&apos;utilisateur"
                 value={username}
                 onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                   setUsername(event.target.value);
@@ -251,7 +251,7 @@ export default () => {
                   else inscrireUser(username);
                 }}
               >
-                S'inscrire
+                S&apos;inscrire
               </button>
               <p className={styles.colorred}>{messageErreur}</p>
             </div>
@@ -276,3 +276,6 @@ export default () => {
     </>
   );
 };
+
+CryptoList.displayName = "CryptoList";
+export default CryptoList;

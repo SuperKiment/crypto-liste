@@ -15,7 +15,6 @@ const CryptoItem: React.FC<CryptoProps> = ({ crypto, username }) => {
 
   return (
     <div className={styles.gridval}>
-      
       <p>
         {crypto.symbol} {crypto.name}
       </p>
@@ -35,4 +34,5 @@ const CryptoItem: React.FC<CryptoProps> = ({ crypto, username }) => {
   );
 };
 
+CryptoItem.displayName = "CryptoItem";
 export default CryptoItem;
